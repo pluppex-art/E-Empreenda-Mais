@@ -8,22 +8,7 @@
     <!-- SEO Básico -->
     <title>E-Empreenda + Escola de Negócios | 3ª Turma</title>
     <meta name="description" content="Desperte o empreendedor que Deus colocou em você. Participe da 3ª Turma da E-Empreenda+ e construa um negócio com propósito e execução real." />
-    <meta name="keywords" content="empreendedorismo, escola de negócios, fé e negócios, gestão, mentalidade empreendedora" />
-    <meta name="author" content="E-Empreenda +" />
-
-    <!-- Open Graph / Facebook / WhatsApp -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://e-empreenda.com.br/" />
-    <meta property="og:title" content="E-Empreenda + | Desperte seu Propósito nos Negócios" />
-    <meta property="og:description" content="Apenas 40 vagas para a nova turma. Entre no grupo VIP para garantir sua pré-inscrição." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200&h=630" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="E-Empreenda + | Escola de Negócios" />
-    <meta property="twitter:description" content="Entre no grupo VIP para garantir sua pré-inscrição na 3ª Turma." />
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200&h=630" />
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -57,36 +42,22 @@
       .btn-shadow {
         box-shadow: 0 10px 40px -10px rgba(191, 149, 63, 0.5);
       }
-      @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-      }
-      .animate-float {
-        animation: float 6s ease-in-out infinite;
-      }
-      input:focus {
-        box-shadow: 0 0 0 2px rgba(191, 149, 63, 0.5);
-      }
-      .brand-name {
-        white-space: nowrap;
-      }
-      /* Melhora a rolagem em dispositivos iOS */
-      .overflow-y-auto {
-        -webkit-overflow-scrolling: touch;
-      }
     </style>
     <script type="importmap">
-    {
-      "imports": {
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "react": "https://esm.sh/react@^19.2.3",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
-      }
-    }
-    </script>
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
   </head>
   <body class="overflow-x-hidden selection:bg-amber-500 selection:text-white">
     <div id="root"></div>
+    <!-- O navegador precisa saber que deve rodar o index.tsx como um módulo -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>

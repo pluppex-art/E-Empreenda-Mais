@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import LandingPage from './pages/LandingPage';
-import ThankYouPage from './pages/ThankYouPage';
+import LandingPage from './pages/LandingPage.tsx';
+import ThankYouPage from './pages/ThankYouPage.tsx';
 
 const App: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);

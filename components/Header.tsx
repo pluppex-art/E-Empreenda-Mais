@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import Logo from './Logo';
+import Logo from './Logo.tsx';
 
 const Header: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
   const [scrolled, setScrolled] = useState(false);
