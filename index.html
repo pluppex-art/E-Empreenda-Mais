@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>E-Empreenda + Escola de Negócios | 3ª Turma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --navy-dark: #010814;
+        --gold-primary: #bf953f;
+        --gold-light: #fcf6ba;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--navy-dark);
+        color: #f8fafc;
+      }
+      h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 45%, #b38728 70%, #fbf5b7 100%);
+      }
+      .gold-text {
+        background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 45%, #b38728 70%, #fbf5b7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glass-card {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .btn-shadow {
+        box-shadow: 0 10px 40px -10px rgba(191, 149, 63, 0.5);
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      input:focus {
+        box-shadow: 0 0 0 2px rgba(191, 149, 63, 0.5);
+      }
+      .brand-name {
+        white-space: nowrap;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+      }
+    }
+    </script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
