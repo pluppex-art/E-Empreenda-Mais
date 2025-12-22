@@ -20,9 +20,8 @@ const Header: React.FC<{ onCtaClick: () => void }> = ({ onCtaClick }) => {
         
         <button 
           onClick={onCtaClick}
-          className={`gold-gradient text-gray-950 font-extrabold text-[10px] md:text-xs px-5 py-2.5 rounded-full btn-shadow transition-all duration-300 transform 
-            absolute right-4 md:relative md:right-0
-            ${scrolled ? 'opacity-100 scale-100' : 'opacity-0 scale-90 pointer-events-none md:opacity-100 md:scale-100 md:pointer-events-auto'}`}
+          className={`hidden md:block gold-gradient text-gray-950 font-extrabold text-xs px-5 py-2.5 rounded-full btn-shadow transition-all duration-300 transform 
+            ${scrolled ? 'opacity-100 scale-100' : 'opacity-100 scale-100'}`}
         >
           PRÉ-INSCRIÇÃO VIP
         </button>
