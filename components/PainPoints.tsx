@@ -31,7 +31,7 @@ const PainPoints: React.FC = () => {
 
               <div className="pt-6 space-y-4">
                 <p>Busca <strong className="text-white">mais clareza e resultados</strong> no seu dia a dia?</p>
-                <p>A Mentoria E-empreenda+ foi criada justamente para ajudar quem quer <strong className="text-amber-500">começar ou crescer</strong> com estratégia, apoio e visão prática.</p>
+                <p>A <span className="whitespace-nowrap font-bold text-amber-500">Mentoria E-empreenda+</span> foi criada justamente para ajudar quem quer <strong>começar ou crescer</strong> com estratégia, apoio e visão prática.</p>
               </div>
             </div>
           </div>

@@ -98,8 +98,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ onFormSubmit }) => {
             <button onClick={closeModal} className="absolute top-6 right-6 text-gray-400 hover:text-white">
               <svg className="w-8 h-8 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
-            <div className="mb-8 text-center">
-              <h3 className="text-2xl font-bold text-white mb-2">Inscrição: Mentoria E-empreenda+</h3>
+            <div className="mb-8 text-center px-4">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-2 leading-tight">Inscrição: <span className="whitespace-nowrap">Mentoria E-empreenda+</span></h3>
               <p className="text-gray-400 text-sm">Preencha agora o formulário e garanta sua vaga na próxima turma!</p>
             </div>
             <LeadForm onSubmit={() => { closeModal(); onFormSubmit(); }} />

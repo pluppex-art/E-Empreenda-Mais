@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         <div className="mb-6 md:mb-8 px-4 py-2 bg-amber-500/10 border border-amber-500/20 rounded-full backdrop-blur-sm inline-flex items-center gap-2">
            <span className="w-2 h-2 bg-amber-500 rounded-full animate-ping"></span>
            <span className="text-amber-500 font-bold text-[9px] md:text-xs tracking-[0.25em] uppercase">
-             Vagas Limitadas para a Mentoria E-empreenda+ (Turma 3)
+             Vagas Limitadas para a <span className="whitespace-nowrap">Mentoria E-empreenda+</span> (Turma 3)
            </span>
         </div>
         
@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         </h1>
 
         <p className="text-base md:text-2xl text-gray-300 mb-6 max-w-4xl mx-auto leading-relaxed font-light opacity-95">
-          Entre no grupo exclusivo onde você vai entender, com clareza, se a <strong className="text-white italic underline decoration-amber-500/50">Mentoria E-empreenda+</strong> é o seu próximo passo para construir um negócio com propósito e visão prática.
+          Entre no grupo exclusivo onde você vai entender, com clareza, se a <span className="whitespace-nowrap"><strong className="text-white italic underline decoration-amber-500/50">Mentoria E-empreenda+</strong></span> é o seu próximo passo para construir um negócio com propósito e visão prática.
         </p>
         
         <p className="text-amber-500/80 text-sm md:text-base mb-10 font-medium italic">
