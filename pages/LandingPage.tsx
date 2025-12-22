@@ -69,14 +69,17 @@ const LandingPage: React.FC<LandingPageProps> = ({ onFormSubmit }) => {
       <div className="bg-[#010814] py-24 md:py-40 px-6 text-center relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-amber-500/10 blur-[80px] rounded-full"></div>
         <div className="relative z-10 max-w-3xl mx-auto">
-          <h2 className="text-[2.2rem] md:text-6xl font-black text-white mb-6 leading-tight">
+          <h2 className="text-[2.2rem] md:text-6xl font-black text-white mb-4 leading-tight">
             Essa não é uma decisão <br className="hidden md:block" /> impulsiva. É <span className="gold-text">consciente</span>.
           </h2>
+          <p className="text-gray-400 text-base md:text-xl mb-10 font-light italic">
+            A decisão que separa seu <span className="text-amber-500 font-bold">2026</span> dos seus <span className="text-white font-bold">últimos 5 anos</span>.
+          </p>
           <button 
             onClick={openModal}
-            className="w-full md:w-auto gold-gradient text-gray-950 font-black text-lg md:text-xl px-12 py-6 rounded-2xl shadow-[0_20px_50px_rgba(191,149,63,0.3)] hover:scale-105 transition-all"
+            className="w-auto md:w-auto gold-gradient text-gray-950 font-black text-sm md:text-xl px-10 md:px-12 py-4 md:py-6 rounded-xl md:rounded-2xl shadow-[0_20px_50px_rgba(191,149,63,0.3)] hover:scale-105 transition-all"
           >
-            QUERO ENTRAR NO GRUPO VIP
+            QUERO ATIVAR O EMPREENDEDOR EM MIM
           </button>
         </div>
       </div>
@@ -85,7 +88,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onFormSubmit }) => {
 
       {showFloatingBtn && (
         <div className="fixed bottom-6 left-6 right-6 z-[90] md:hidden">
-          <button onClick={openModal} className="w-full gold-gradient text-gray-950 font-black py-4 rounded-xl shadow-2xl">
+          <button onClick={openModal} className="w-full gold-gradient text-gray-950 font-black py-4 rounded-xl shadow-2xl text-sm">
             GARANTIR MINHA VAGA VIP
           </button>
         </div>

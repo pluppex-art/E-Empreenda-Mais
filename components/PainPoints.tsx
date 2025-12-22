@@ -5,7 +5,7 @@ const PainPoints: React.FC = () => {
   return (
     <section className="bg-[#010814] py-20 md:py-32 px-6 overflow-hidden border-t border-white/5">
       <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
           <div className="order-2 lg:order-1">
             <div className="space-y-6 text-base md:text-lg text-gray-300 leading-relaxed font-light">
               <p className="text-amber-500 font-bold uppercase tracking-widest text-sm mb-4">Esta Mentoria é para você que é:</p>
@@ -44,6 +44,14 @@ const PainPoints: React.FC = () => {
               Não importa se você ainda está no CLT ou se já possui um negócio estruturado. O que importa é a sua disposição para a transformação real.
             </p>
           </div>
+        </div>
+
+        {/* Ponte Estratégica */}
+        <div className="relative p-8 md:p-12 bg-gradient-to-b from-amber-500/5 to-transparent border-t border-amber-500/20 rounded-3xl text-center">
+          <h3 className="text-white text-xl md:text-3xl font-bold mb-4">A Ponte Estratégica para o seu Sucesso</h3>
+          <p className="text-gray-400 text-base md:text-xl leading-relaxed max-w-4xl mx-auto font-light">
+            O que você fizer nos próximos <span className="text-amber-500 font-bold">90 dias</span> define os próximos 12 meses. E os próximos 12 meses constroem seu <span className="text-white font-bold">2026</span>. A <span className="whitespace-nowrap brand-name">Mentoria E-Empreenda+</span> acelera esse processo para você não perder tempo nem oportunidades.
+          </p>
         </div>
       </div>
     </section>
