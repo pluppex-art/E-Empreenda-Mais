@@ -48,7 +48,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             onClick={onCtaClick}
             className="w-full md:w-auto gold-gradient text-gray-950 font-black text-lg md:text-xl px-12 md:px-20 py-5 md:py-6 rounded-2xl btn-shadow hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_20px_60px_rgba(191,149,63,0.4)]"
           >
-            QUERO ENTRAR NO GRUPO DE PRÉ-INSCRIÇÃO
+            QUERO ATIVAR O EMPREENDEDOR QUE HÁ EM MIM
           </button>
           
           <div className="flex flex-col items-center gap-3">

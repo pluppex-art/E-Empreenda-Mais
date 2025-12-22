@@ -6,7 +6,7 @@ const SocialProof: React.FC = () => {
     {
       name: "Gustavo Oliveira",
       role: "Estrategista Digital",
-      text: "Escalar um negócio digital exige muito mais que apenas técnica; exige uma base sólida de princípios. Na <span class='brand-name text-amber-500 font-bold'>E-Empreenda+</span> encontrei o equilíbrio perfeito entre métricas agressivas e propósito inegociável.",
+      text: "Escalar um negócio digital exige muito mais que apenas técnica; exige uma base sólida de princípios. Na <span class='whitespace-nowrap brand-name text-amber-500 font-bold'>E-Empreenda+</span> encontrei o equilíbrio perfeito entre métricas agressivas e propósito inegociável.",
     },
     {
       name: "Renata Luz",
@@ -16,7 +16,12 @@ const SocialProof: React.FC = () => {
     {
       name: "Marcus Vinícius",
       role: "Servidor Público",
-      text: "Como servidor, eu buscava segurança, mas sentia um chamado latente para frutificar fora do sistema. A E-Empreenda+ me deu a coragem e, principalmente, o método para empreender com responsabilidade e clareza de direção.",
+      text: "Como servidor, eu buscava segurança, mas sentia um chamado latente para frutificar fora do sistema. A <span class='whitespace-nowrap'>E-Empreenda+</span> me deu a coragem e, principalmente, o método para empreender com responsabilidade e clareza de direção.",
+    },
+    {
+      name: "Kevin Oliveira",
+      role: "Vendedor",
+      text: "Eu já tinha a garra de vendas, mas me faltava a visão de dono. A mentoria me ensinou a transformar esforço individual em um modelo de negócio replicável. Hoje não apenas vendo, eu construo um ativo com base em valores.",
     },
     {
       name: "Eduarda Porto",
@@ -26,7 +31,7 @@ const SocialProof: React.FC = () => {
     {
       name: "Gustavo Silva",
       role: "Instrutor de Canto",
-      text: "Viver de arte é um desafio constante. A E-Empreenda+ me ensinou a gerir minha carreira como uma empresa, trazendo previsibilidade financeira e uma autoridade que eu não conseguia construir sozinho no mercado de ensino.",
+      text: "Viver de arte é um desafio constante. A <span class='whitespace-nowrap'>E-Empreenda+</span> me ensinou a gerir minha carreira como uma empresa, trazendo previsibilidade financeira e uma autoridade que eu não conseguia construir sozinho no mercado de ensino.",
     }
   ];
 
@@ -41,7 +46,7 @@ const SocialProof: React.FC = () => {
             Onde a estratégia encontra a <span className="gold-text">Transformação</span>.
           </h2>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto font-light leading-relaxed">
-            Não vendemos métodos de "fique rico rápido". Nossos alunos constroem bases sólidas que suportam o crescimento a longo prazo sob os princípios da <span className="brand-name">E-Empreenda +</span>.
+            Não vendemos métodos de "fique rico rápido". Nossos alunos constroem bases sólidas que suportam o crescimento a longo prazo sob os princípios da <span className="whitespace-nowrap brand-name">E-Empreenda+</span>.
           </p>
         </div>
 
@@ -49,7 +54,7 @@ const SocialProof: React.FC = () => {
           {testimonials.map((t, idx) => (
             <div 
               key={`${t.name}-${t.role}-${idx}`} 
-              className={`bg-[#0f172a] p-8 rounded-3xl border border-gray-800/50 hover:border-amber-500/20 transition-all shadow-xl flex flex-col justify-between ${idx === 3 && testimonials.length === 5 ? 'md:col-span-1' : ''}`}
+              className="bg-[#0f172a] p-8 rounded-3xl border border-gray-800/50 hover:border-amber-500/20 transition-all shadow-xl flex flex-col justify-between"
             >
               <div>
                 <div className="flex text-amber-500 mb-6">

@@ -4,8 +4,8 @@ import React from 'react';
 const InsideGroup: React.FC = () => {
   const items = [
     { title: "Conteúdos de Preparação", desc: "Receba materiais exclusivos que vão preparar sua mente para a Turma 3." },
-    { title: "Bastidores do Método E+", desc: "Entenda a estrutura por trás dos negócios que unem propósito e lucro." },
-    { title: "Acesso Antecipado", desc: "Garanta o link de inscrição antes de todo mundo e com bônus de fundação." },
+    { title: "Bastidores do Método E+", desc: "Entenda a estrutura por trás dos negócios que unem propósito e identidade que te leva ao lucro." },
+    { title: "Acesso Antecipado", desc: "Garanta o link de inscrição antes de todo mundo e tenha prioridade máxima na Turma 3." },
     { title: "Networking Curado", desc: "Conecte-se com empreendedores que buscam os mesmos valores que você." }
   ];
 
@@ -44,7 +44,7 @@ const InsideGroup: React.FC = () => {
              ⚠️ APENAS 40 VAGAS PRESENCIAIS
            </p>
            <p className="text-white text-lg font-light leading-relaxed max-w-2xl mx-auto">
-             Prezamos pela curadoria extrema. Uma vez preenchidas no grupo de pré-inscrição, não abriremos exceções para a Turma 3.
+             Prezamos pela curadoria detalhada. Uma vez preenchidas no grupo de pré-inscrição, não abriremos exceções para a Turma 3.
            </p>
         </div>
       </div>

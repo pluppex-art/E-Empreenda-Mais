@@ -16,14 +16,35 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="flex gap-10 text-gray-400 font-medium text-sm">
-            <a href="#" className="hover:text-amber-500 transition-colors">Instagram</a>
-            <a href="#" className="hover:text-amber-500 transition-colors">YouTube</a>
-            <a href="#" className="hover:text-amber-500 transition-colors">Suporte</a>
+            <a 
+              href="https://www.instagram.com/e.empreendamais/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-amber-500 transition-colors"
+            >
+              Instagram
+            </a>
+            <a 
+              href="https://www.youtube.com/e-empreendamais" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-amber-500 transition-colors"
+            >
+              YouTube
+            </a>
+            <a 
+              href="https://wa.me/556381017226" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-amber-500 transition-colors"
+            >
+              Suporte
+            </a>
           </div>
         </div>
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-white/5 text-[10px] text-gray-600 uppercase tracking-widest font-bold">
-          <div>&copy; {new Date().getFullYear()} <span className="brand-name">E-Empreenda +</span></div>
+          <div>&copy; {new Date().getFullYear()} <span className="brand-name whitespace-nowrap">E-Empreenda +</span></div>
           <div className="flex gap-6">
             <span>Privacidade</span>
             <span>Termos de Uso</span>
