@@ -8,6 +8,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ className = "h-12" }) => {
   const [error, setError] = useState(false);
 
+  // Assumindo que o arquivo logo.png contém a imagem da chama enviada
   const logoUrl = "logo.png";
 
   return (
@@ -17,10 +18,10 @@ const Logo: React.FC<LogoProps> = ({ className = "h-12" }) => {
           src={logoUrl}
           alt="E-Empreenda +" 
           onError={(e) => {
-            console.warn("Tentativa de carregar logo falhou em: " + logoUrl);
+            console.warn("Logo não encontrada no caminho: " + logoUrl);
             setError(true);
           }}
-          className="h-full w-auto object-contain drop-shadow-xl"
+          className="h-full w-auto object-contain drop-shadow-[0_0_15px_rgba(191,149,63,0.3)]"
         />
       ) : (
         <div className="flex flex-col items-center">
