@@ -15,7 +15,7 @@ const Logo: React.FC<LogoProps> = ({ className = "h-12" }) => {
       {!error ? (
         <img 
           src={logoUrl}
-          alt="E-Empreenda + Escola de Negócios" 
+          alt="E-Empreenda +" 
           onError={(e) => {
             console.warn("Tentativa de carregar logo falhou em: " + logoUrl);
             setError(true);
@@ -27,8 +27,8 @@ const Logo: React.FC<LogoProps> = ({ className = "h-12" }) => {
           <span className="gold-text font-black text-2xl tracking-tighter whitespace-nowrap brand-name">
             E-EMPREENDA +
           </span>
-          <span className="text-[8px] text-amber-500/50 tracking-[0.3em] font-bold uppercase whitespace-nowrap">
-            Escola de Negócios
+          <span className="text-[8px] text-amber-500/50 tracking-[0.4em] font-bold uppercase whitespace-nowrap mt-0.5">
+            Propósito & Execução
           </span>
         </div>
       )}

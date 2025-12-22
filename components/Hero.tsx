@@ -26,21 +26,21 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
         <div className="mb-6 md:mb-8 px-4 py-2 bg-amber-500/10 border border-amber-500/20 rounded-full backdrop-blur-sm inline-flex items-center gap-2">
            <span className="w-2 h-2 bg-amber-500 rounded-full animate-ping"></span>
            <span className="text-amber-500 font-bold text-[9px] md:text-xs tracking-[0.25em] uppercase">
-             Vagas Limitadas para o Grupo de Pré-Inscrição da Turma 3
+             Vagas Limitadas para a Mentoria E-empreenda+ (Turma 3)
            </span>
         </div>
         
         <h1 className="text-[2.6rem] md:text-7xl lg:text-8xl font-black mb-6 text-white leading-[1.05] tracking-tight">
           Desperte o <span className="gold-text">Empreendedor</span> que <br className="hidden md:block" /> 
-          Deus colocou em você.
+          existe em você.
         </h1>
 
         <p className="text-base md:text-2xl text-gray-300 mb-6 max-w-4xl mx-auto leading-relaxed font-light opacity-95">
-          Entre no grupo exclusivo onde você vai entender, com clareza, se o <strong className="text-white">Método E+</strong> é ou não o seu próximo passo para construir um negócio com propósito e execução real.
+          Entre no grupo exclusivo onde você vai entender, com clareza, se a <strong className="text-white italic underline decoration-amber-500/50">Mentoria E-empreenda+</strong> é o seu próximo passo para construir um negócio com propósito e visão prática.
         </p>
         
         <p className="text-amber-500/80 text-sm md:text-base mb-10 font-medium italic">
-          Isso não é a inscrição no treinamento. É o ambiente onde você será preparado para decidir com consciência.
+          "Empreender transforma vidas." Esteja pronto para liderar com consciência e valores inegociáveis.
         </p>
 
         <div className="w-full flex flex-col items-center gap-8">
@@ -60,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
               ))}
               <div className="w-9 h-9 md:w-11 md:h-11 rounded-full border-2 border-[#010814] bg-amber-500 flex items-center justify-center text-[10px] md:text-xs font-black text-gray-950 shadow-lg">+196</div>
             </div>
-            <p className="text-gray-400 text-[10px] md:text-sm font-medium">Junte-se a <span className="text-white font-bold">centenas de empreendedores</span> ativados.</p>
+            <p className="text-gray-400 text-[10px] md:text-sm font-medium">Junte-se a <span className="text-white font-bold">centenas de empreendedores</span> com visão.</p>
           </div>
         </div>
       </div>

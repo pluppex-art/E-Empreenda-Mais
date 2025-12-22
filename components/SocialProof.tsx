@@ -6,17 +6,17 @@ const SocialProof: React.FC = () => {
     {
       name: "Gustavo Oliveira",
       role: "Estrategista Digital",
-      text: "Escalar um negócio digital exige muito mais que apenas técnica; exige uma base sólida de princípios. Na <span class='brand-name text-amber-500 font-bold'>E-Empreenda+</span> Escola de Negócios encontrei o equilíbrio perfeito entre métricas agressivas e propósito inegociável.",
+      text: "Escalar um negócio digital exige muito mais que apenas técnica; exige uma base sólida de princípios. Na <span class='brand-name text-amber-500 font-bold'>E-Empreenda+</span> encontrei o equilíbrio perfeito entre métricas agressivas e propósito inegociável.",
     },
     {
       name: "Renata Luz",
       role: "Recriar Crochê",
-      text: "O crochê era meu refúgio, mas na Escola virou meu negócio real. Aprendi a sair do amadorismo, valorizar meu trabalho e estruturar processos que me permitem crescer sem perder a essência do que eu faço com as mãos.",
+      text: "O crochê era meu refúgio, mas no movimento E+ virou meu negócio real. Aprendi a sair do amadorismo, valorizar meu trabalho e estruturar processos que me permitem crescer sem perder a essência do que eu faço com as mãos.",
     },
     {
-      name: "Marcus Vinicius",
+      name: "Marcus Vinícius",
       role: "Servidor Público",
-      text: "Como servidor, eu buscava segurança, mas sentia um chamado latente para frutificar fora do sistema. A Escola me deu a coragem e, principalmente, o método para empreender com responsabilidade e clareza de direção.",
+      text: "Como servidor, eu buscava segurança, mas sentia um chamado latente para frutificar fora do sistema. A E-Empreenda+ me deu a coragem e, principalmente, o método para empreender com responsabilidade e clareza de direção.",
     },
     {
       name: "Eduarda Porto",
@@ -24,19 +24,9 @@ const SocialProof: React.FC = () => {
       text: "Minha clínica mudou de patamar quando entendi que ser uma excelente profissional técnica é diferente de ser uma dona de clínica de sucesso. O <span class='brand-name text-amber-500 font-bold'>Método E+</span> foi o divisor de águas na minha gestão.",
     },
     {
-      name: "Gustavo Oliveira",
+      name: "Gustavo Silva",
       role: "Instrutor de Canto",
-      text: "Viver de arte é um desafio constante. A Escola me ensinou a gerir minha carreira como uma empresa, trazendo previsibilidade financeira e uma autoridade que eu não conseguia construir sozinho no mercado de ensino.",
-    },
-    {
-      name: "Joao Filho",
-      role: "Gestor de Tráfego",
-      text: "Gerir tráfego é gerir confiança e capital. Na comunidade da <span class='brand-name text-amber-500 font-bold'>E-Empreenda+</span>, conectei-me com parceiros de alto nível e melhorei minha entrega ética e estratégica para meus clientes de forma extraordinária.",
-    },
-    {
-      name: "Israel de Freitas",
-      role: "Mentor de Identidade e Propósito",
-      text: "Tudo começa na identidade. Vi na prática como negócios prosperam quando o empreendedor sabe quem ele é e para onde está indo. A Escola é o ambiente perfeito para quem busca essa profundidade unida à execução prática.",
+      text: "Viver de arte é um desafio constante. A E-Empreenda+ me ensinou a gerir minha carreira como uma empresa, trazendo previsibilidade financeira e uma autoridade que eu não conseguia construir sozinho no mercado de ensino.",
     }
   ];
 
@@ -51,7 +41,7 @@ const SocialProof: React.FC = () => {
             Onde a estratégia encontra a <span className="gold-text">Transformação</span>.
           </h2>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto font-light leading-relaxed">
-            Não vendemos métodos de "fique rico rápido". Nossos alunos constroem bases sólidas que suportam o crescimento a longo prazo sob os princípios da <span className="brand-name">E-Empreenda + Escola de Negócios</span>.
+            Não vendemos métodos de "fique rico rápido". Nossos alunos constroem bases sólidas que suportam o crescimento a longo prazo sob os princípios da <span className="brand-name">E-Empreenda +</span>.
           </p>
         </div>
 
@@ -59,7 +49,7 @@ const SocialProof: React.FC = () => {
           {testimonials.map((t, idx) => (
             <div 
               key={`${t.name}-${t.role}-${idx}`} 
-              className={`bg-[#0f172a] p-8 rounded-3xl border border-gray-800/50 hover:border-amber-500/20 transition-all shadow-xl flex flex-col justify-between ${idx === 6 ? 'md:col-span-2 lg:col-span-1' : ''}`}
+              className={`bg-[#0f172a] p-8 rounded-3xl border border-gray-800/50 hover:border-amber-500/20 transition-all shadow-xl flex flex-col justify-between ${idx === 3 && testimonials.length === 5 ? 'md:col-span-1' : ''}`}
             >
               <div>
                 <div className="flex text-amber-500 mb-6">

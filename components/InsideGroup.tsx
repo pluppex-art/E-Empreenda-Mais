@@ -4,7 +4,7 @@ import React from 'react';
 const InsideGroup: React.FC = () => {
   const items = [
     { title: "Conteúdos de Preparação", desc: "Receba materiais exclusivos que vão preparar sua mente para a Turma 3." },
-    { title: "Bastidores do Método E+", desc: "Entenda a estrutura por trás dos negócios que unem fé e lucro." },
+    { title: "Bastidores do Método E+", desc: "Entenda a estrutura por trás dos negócios que unem propósito e lucro." },
     { title: "Acesso Antecipado", desc: "Garanta o link de inscrição antes de todo mundo e com bônus de fundação." },
     { title: "Networking Curado", desc: "Conecte-se com empreendedores que buscam os mesmos valores que você." }
   ];

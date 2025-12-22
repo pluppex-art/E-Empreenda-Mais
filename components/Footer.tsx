@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
              <Logo className="h-24 mb-4" />
              <p className="text-gray-500 text-sm max-w-sm">
-               Despertando o empreendedor com propósito. <br />
-               Unindo fé, estratégia e execução real.
+               Ativando o empreendedor através do propósito. <br />
+               Unindo identidade, estratégia e execução real.
              </p>
           </div>
           
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-white/5 text-[10px] text-gray-600 uppercase tracking-widest font-bold">
-          <div>&copy; {new Date().getFullYear()} <span className="brand-name">E-Empreenda +</span> Escola de Negócios</div>
+          <div>&copy; {new Date().getFullYear()} <span className="brand-name">E-Empreenda +</span></div>
           <div className="flex gap-6">
             <span>Privacidade</span>
             <span>Termos de Uso</span>

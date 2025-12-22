@@ -33,14 +33,25 @@ const LandingPage: React.FC<LandingPageProps> = ({ onFormSubmit }) => {
       <Header onCtaClick={openModal} />
       <Hero onCtaClick={openModal} />
       
-      <div className="bg-[#020b1a] py-8 border-y border-white/5 relative z-10">
+      {/* Banner de Impacto extraído do print */}
+      <div className="bg-[#0b1221] py-4 border-y border-amber-500/20 overflow-hidden whitespace-nowrap">
+        <div className="flex animate-[marquee_30s_linear_infinite] gap-12 items-center">
+          {[1,2,3,4,5].map(i => (
+            <span key={i} className="text-amber-500 font-black text-sm md:text-xl tracking-[0.5em] uppercase opacity-80">
+              EMPREENDER TRANSFORMA VIDAS
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-[#020b1a] py-8 border-b border-white/5 relative z-10">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-3 gap-4 md:flex md:justify-center md:gap-24">
            <div className="flex flex-col items-center text-center group">
              <span className="text-xl md:text-3xl font-bold text-white group-hover:text-amber-500 transition-colors">40</span>
-             <span className="text-[8px] md:text-[10px] uppercase tracking-widest text-gray-400 mt-1">Vagas Reais</span>
+             <span className="text-[8px] md:text-[10px] uppercase tracking-widest text-gray-400 mt-1">Vagas</span>
            </div>
            <div className="flex flex-col items-center text-center group">
-             <span className="text-xl md:text-3xl font-bold text-white italic group-hover:text-amber-500 transition-colors">Fé &</span>
+             <span className="text-xl md:text-3xl font-bold text-white italic group-hover:text-amber-500 transition-colors">Visão</span>
              <span className="text-[8px] md:text-[10px] uppercase tracking-widest text-gray-400 mt-1 font-bold">Execução</span>
            </div>
            <div className="flex flex-col items-center text-center group">
@@ -87,10 +98,21 @@ const LandingPage: React.FC<LandingPageProps> = ({ onFormSubmit }) => {
             <button onClick={closeModal} className="absolute top-6 right-6 text-gray-400 hover:text-white">
               <svg className="w-8 h-8 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
+            <div className="mb-8 text-center">
+              <h3 className="text-2xl font-bold text-white mb-2">Inscrição: Mentoria E-empreenda+</h3>
+              <p className="text-gray-400 text-sm">Preencha agora o formulário e garanta sua vaga na próxima turma!</p>
+            </div>
             <LeadForm onSubmit={() => { closeModal(); onFormSubmit(); }} />
           </div>
         </div>
       )}
+
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}} />
     </main>
   );
 };
