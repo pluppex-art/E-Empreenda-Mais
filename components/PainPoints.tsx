@@ -1,56 +1,80 @@
 
 import React from 'react';
 
+const pains = [
+  {
+    pain: 'Você trabalha muito, mas a vida financeira não avança.',
+    expansion: 'A sensação de rodar em círculos enquanto o tempo passa — sem ver progresso real.',
+    desire: 'LIBERDADE FINANCEIRA',
+    label: 'Estagnação',
+  },
+  {
+    pain: 'Você tem ideias, mas não sabe por onde começar.',
+    expansion: 'Sem um passo a passo concreto, a energia vira ansiedade — e os projetos ficam na gaveta.',
+    desire: 'MÉTODO E CLAREZA',
+    label: 'Falta de Método',
+  },
+  {
+    pain: 'O medo de errar paralisa mais do que qualquer obstáculo externo.',
+    expansion: 'O que outros chamam de falta de coragem é, na verdade, falta de um ambiente seguro para testar e crescer.',
+    desire: 'CONFIANÇA PARA AGIR',
+    label: 'Medo',
+  },
+  {
+    pain: 'Você empreende sozinho — sem rede, sem referência, sem troca real.',
+    expansion: 'A ausência de uma comunidade de pares que compartilhe dos mesmos valores torna a jornada desnecessariamente difícil.',
+    desire: 'COMUNIDADE E SUPORTE',
+    label: 'Isolamento',
+  },
+  {
+    pain: 'Depender de uma única fonte de renda é um risco que te tira o sono.',
+    expansion: 'Você sente que deveria ter construído algo seu — mas nunca encontrou o momento ou o método certo.',
+    desire: 'MÚLTIPLOS FLUXOS',
+    label: 'Renda Única',
+  },
+];
+
 const PainPoints: React.FC = () => {
   return (
     <section className="bg-[#010814] py-20 md:py-32 px-6 overflow-hidden border-t border-white/5">
-      <div className="max-w-5xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-20">
-          <div className="order-2 lg:order-1">
-            <div className="space-y-6 text-base md:text-lg text-gray-300 leading-relaxed font-light">
-              <p className="text-amber-500 font-bold uppercase tracking-widest text-sm mb-4">Esta Mentoria é para você que é:</p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex items-center gap-4 p-4 bg-[#0f172a] rounded-xl border border-white/5">
-                  <span className="text-amber-500 font-bold">✔</span>
-                  <p className="text-white font-medium">Empregado CLT</p>
-                </div>
-                <div className="flex items-center gap-4 p-4 bg-[#0f172a] rounded-xl border border-white/5">
-                  <span className="text-amber-500 font-bold">✔</span>
-                  <p className="text-white font-medium">Empreendedor MEI</p>
-                </div>
-                <div className="flex items-center gap-4 p-4 bg-[#0f172a] rounded-xl border border-white/5">
-                  <span className="text-amber-500 font-bold">✔</span>
-                  <p className="text-white font-medium">Autônomo</p>
-                </div>
-                <div className="flex items-center gap-4 p-4 bg-[#0f172a] rounded-xl border border-white/5">
-                  <span className="text-amber-500 font-bold">✔</span>
-                  <p className="text-white font-medium italic">Sonha em Empreender</p>
-                </div>
-              </div>
-
-              <div className="pt-6 space-y-4">
-                <p>Busca <strong className="text-white">mais clareza e resultados</strong> no seu dia a dia?</p>
-                <p>A <span className="whitespace-nowrap font-bold text-amber-500">Mentoria E-empreenda+</span> foi criada justamente para ajudar quem quer <strong>começar ou crescer</strong> com estratégia, apoio e visão prática.</p>
-              </div>
-            </div>
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-14">
+          <div className="inline-block bg-amber-500/10 text-amber-500 text-[10px] font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-[0.2em]">
+            Você se reconhece aqui?
           </div>
-          
-          <div className="order-1 lg:order-2 text-center lg:text-left">
-            <h2 className="text-[2.5rem] md:text-6xl font-bold text-white mb-6 leading-tight">
-              A Mentoria feita para o seu <br /> <span className="text-amber-500 italic">momento atual.</span>
-            </h2>
-            <p className="text-gray-500 font-medium text-sm md:text-base leading-relaxed max-w-md">
-              Não importa se você ainda está no CLT ou se já possui um negócio estruturado. O que importa é a sua disposição para a transformação real.
-            </p>
-          </div>
+          <h2 className="text-[2.2rem] md:text-5xl font-bold text-white mb-4 leading-tight">
+            Reconhece alguma dessas <span className="gold-text">situações?</span>
+          </h2>
+          <p className="text-gray-500 text-base md:text-lg max-w-xl mx-auto font-light">
+            Se 3 ou mais ressoaram com você — o Método E+ foi criado para você.
+          </p>
         </div>
 
-        {/* Ponte Estratégica */}
-        <div className="relative p-8 md:p-12 bg-gradient-to-b from-amber-500/5 to-transparent border-t border-amber-500/20 rounded-3xl text-center">
-          <h3 className="text-white text-xl md:text-3xl font-bold mb-4">A Ponte Estratégica para o seu Sucesso</h3>
-          <p className="text-gray-400 text-base md:text-xl leading-relaxed max-w-4xl mx-auto font-light">
-            O que você fizer nos próximos <span className="text-amber-500 font-bold">90 dias</span> define os próximos 12 meses. E os próximos 12 meses constroem seu <span className="text-white font-bold">2026</span>. A <span className="whitespace-nowrap brand-name">Mentoria E-Empreenda+</span> acelera esse processo para você não perder tempo nem oportunidades.
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {pains.map((item, idx) => (
+            <div
+              key={idx}
+              className="bg-[#0f172a] rounded-3xl border border-gray-800/50 hover:border-amber-500/30 transition-all p-8 flex flex-col gap-4"
+            >
+              <span className="text-amber-500/50 text-[10px] font-bold uppercase tracking-[0.2em]">{item.label}</span>
+              <p className="text-white font-bold text-base md:text-lg leading-snug">{item.pain}</p>
+              <p className="text-gray-500 text-sm leading-relaxed font-light">{item.expansion}</p>
+              <div className="flex items-center gap-2 mt-auto pt-4 border-t border-white/5">
+                <span className="text-amber-500 text-lg font-black">→</span>
+                <span className="text-amber-500 text-[10px] font-black uppercase tracking-[0.2em]">{item.desire}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-14 text-center">
+          <p className="text-gray-400 text-base md:text-xl leading-relaxed max-w-3xl mx-auto font-light">
+            Se você se reconheceu aqui,{' '}
+            <span className="text-white font-semibold">não é falta de talento.</span>{' '}
+            É falta de método.{' '}
+            <br className="hidden md:block" />
+            E é exatamente isso que o{' '}
+            <span className="text-amber-500 font-bold">Método E+</span> entrega — em 12 semanas presenciais.
           </p>
         </div>
       </div>
